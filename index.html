@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="body">
+
+    <button id="create-obj" class="action-button">
+        Create an object
+    </button>
+
+<div class="alert">
+    <iconify-icon class="alert-icon green-text" icon="material-symbols:check-circle-rounded"></iconify-icon>
+    <p class="alert-message green-text">
+        Your object has been successfully created
+    </p>
+    <button onclick="close" class="alert-action">
+        <iconify-icon icon="material-symbols:close"></iconify-icon>
+    </button>
+</div>
+
+<div class="alert">
+    <iconify-icon class="alert-icon warn-text"  icon="ri:close-circle-fill"></iconify-icon>
+    <p class="alert-message warn-text">
+        Your object could not be created
+    </p>
+    <button onclick="close()" class="alert-action">
+        <iconify-icon icon="material-symbols:close"></iconify-icon>
+    </button>
+</div>
+<script src="script.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>
